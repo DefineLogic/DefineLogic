@@ -1,0 +1,28 @@
+
+  body {
+      font-family: 'Courier New', Courier, monospace;
+  }
+  .imgA1 {
+    width: 100%;
+    z-index: 1;
+    
+  }
+  .imgB1 {
+    border-radius: 50%;
+    width: 220px;
+    max-height: 220px;
+    margin-left: 5%;
+    z-index: 3;
+    border: white solid 6px;
+    top: 112px;
+    position: relative;
+  }
+
+  pre {
+    font-weight: bold;
+    margin-left: -128px;
+  }
+
+  a[href] {
+    color: #000707;
+  }
