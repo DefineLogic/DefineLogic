@@ -1,0 +1,35 @@
+body {
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+form{
+    width: 50%;
+    background-color: gray;
+    border: white 2px solid;
+    margin:auto;
+    text-align: center;
+}
+
+h1{
+    font-weight: bold;
+    color: blue;
+
+}
+
+input[type="submit"]{
+    background-color: green;
+    font-size: 20px;
+    margin: 5px;
+    text-align: center;
+}
+
+form > label, form > input, form > select , form > div{
+    width: 48%;
+    display: inline-block;
+    margin: 2px;
+    text-align: right;
+}
+
+
+
+
