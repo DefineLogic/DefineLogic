@@ -8,8 +8,9 @@
     <script>
         function calcTip() {
             var subTotal = document.getElementById('subtotal').value;
-            var tip = document.getElementById('tip').value;
-            var total = subTotal * tip * 0.01;
+            var tipPercent = document.getElementById('tip').value;
+            var tip = subTotal * tipPercent * 0.01;
+			var total = parseInt(tip) + parseInt(subTotal);
             document.getElementById('total').innerHTML = total;
         }
     </script>
