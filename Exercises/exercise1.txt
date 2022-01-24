@@ -24,6 +24,11 @@ setTimeout(booyah2(), 2000);
 function booyah1 {
     alert("BOOYAH!");
 }
+function booyah2(){
+    return function(){
+        alert("BOOYAH!");
+    }
+}
 
 
 4. What is "Unobtrusive Javascript"? What is the practical application of Unobtrusive Javascript (and the reasons

@@ -1,0 +1,57 @@
+1> 
+10
+8
+8
+9
+10
+1
+
+2> function is a block of code. 
+    method is a property of object in javascript. 
+3> In java , this refers to the object on whose method is called. 
+4> In js method, this refers to the object newly created. 
+5> In js constructor , this refers to the object which is being created. 
+6> this refers to x. 
+7> A variable that is referred to by a function that is not one of its parameters or local variables. 
+a varaible that is used in a funciton that is
+8> const obj = {
+    name: "fred",
+    major: "music",
+    numberFunction: function(a, b) {
+        if (a == b)
+            return Math.pow(a, 2) + Math.pow(b, 2)
+        else
+            return a - b;
+    }
+}
+
+9> function Employee(name, salary, position){
+    this.name = name;
+    this.salary = salary;
+    this.position = position;
+}
+
+const emp1 = new Employee("Billie",20000,"Senior Engineer");
+const emp2 = new Employee("Joe",30000,"Junior Engineer");
+
+10> function product(...more) {
+    var result = 1;
+    for (let i = 0; i < more.length; i++) {
+        result *= more[i];
+    }
+    return result;
+}
+console.log(product(1, 2, 3));
+
+11> var findMax = (a, b, c) => {
+    if (a > b) {
+        if (a > c) {
+            return a;
+        }
+        if (b > c) {
+            return b;
+        }
+    }
+    return c;
+}
+console.log(findMax(20, 11, 24));
