@@ -13,6 +13,7 @@ function startAnimation() {
     var e = document.getElementById("animations");
     var animationType = e.value;
     animationArray = ANIMATIONS[animationType].split("=====");
+    i = 0;
     timer = setInterval(animate, speed, animationArray);
 }
 
