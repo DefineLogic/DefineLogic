@@ -9,7 +9,6 @@ var MODULE = (function() {
                 clearInterval(timer);
                 timer = null;
             }
-            return timer;
         }
     }
 })();

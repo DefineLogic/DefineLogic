@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASCIImation</title>
+    <script src="animations.js"></script>
+    <script src="ascii.js"></script>
+    <link href="ascii.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+    <h1>CSE 190 M ASCII Animation Viewer</h1>
+    <textarea id="myTextArea" name="canvas" rows="20" cols="80"></textarea>
+    <div id="controls">
+        <fieldset>
+            <legend>Play Controls:</legend>
+            <input type="button" onclick="startAnimation()" value="Start" id="startBtn">
+            <input type="button" onclick="stopAnimation()" value="Stop" id="stopBtn" disabled="true">
+        </fieldset>
+        <fieldset>
+            <legend>Animation:</legend>
+            <select id="animations" name="animations">
+            <option value="blank" selected>Blank</option>
+            <option value="exercise">Exercise</option>
+            <option value="juggler">Juggler</option>
+            <option value="bike">Bike</option>
+            <option value="dive">Dive</option>
+            <option value="custom">Custom</option>
+          </select>
+        </fieldset>
+        <fieldset>
+            <legend>Size:</legend>
+            <select id="sizes" name="sizes" onchange="changeFontSize()">
+            <option value="7pt">Tiny</option>
+            <option value="10pt">Small</option>
+            <option value="12pt" selected>Medium</option>
+            <option value="16pt">Large</option>
+            <option value="24pt">XL</option>
+            <option value="32pt">XXL</option>
+          </select>
+        </fieldset>
+        <fieldset>
+            <legend>Speed:</legend>
+            <input type="checkbox" id="speed" name="speed" value="speed" onclick="toggleSpeed()">
+            <label for="speed">Turbo</label>
+        </fieldset>
+    </div>
+    <div id="validators">
+        <a href="http://validator.w3.org/check/referer"><img src="w3c-html.png" alt="Valid HTML5" /></a> <br />
+        <a href="http://jigsaw.w3.org/css-validator/check/referer"><img src="w3c-css.png" alt="Valid CSS" /></a>
+        <a href="https://webster.cs.washington.edu/jslint/?referer">
+            <img src="https://webster.cs.washington.edu/w3c-js.png" alt="Valid JS" />
+        </a>
+    </div>
+</body>
+
+</html>

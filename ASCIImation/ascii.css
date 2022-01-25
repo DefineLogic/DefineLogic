@@ -1,0 +1,36 @@
+body {
+    background-color: #CCCCFF;
+    font-family: sans-serif;
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 32pt;
+    text-align: center;
+}
+
+textarea {
+    width: 90%;
+    height: 400px;
+    font-family: 12pt;
+    display: block;
+    margin: auto;
+}
+
+div {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+fieldset {
+    border: 5px black solid;
+}
+
+#validators {
+    position: fixed;
+    right: 0px;
+    bottom: 31px;
+    opacity: 0.5;
+}
