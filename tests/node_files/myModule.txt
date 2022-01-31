@@ -1,0 +1,9 @@
+var myDate = function() {
+    return Date();
+}
+
+module.exports = myDate;
+
+exports.asd = function() {
+    return Date();
+};

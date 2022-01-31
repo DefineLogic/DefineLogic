@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            padding: 3pt;
+            font-family: Tahoma;
+        }
+        
+        button {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="/calculate" method="post">
+        First Number: <input name="firstNumber"></br>
+        Second Number:<input name="secondNumber"></br>
+        Select Operation:<select id="operations" name="operations">
+        <option value="add" selected>Add</option>
+        <option value="subtract">Subtract</option>
+        <option value="multiply">Multiply</option>
+        <option value="divide">Divide</option>
+        </select><br>
+        <button type="submit">Submit</button> </form>
+</body>
+
+</html>

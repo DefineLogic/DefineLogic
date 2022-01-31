@@ -1,0 +1,17 @@
+doctype html
+html
+    head 
+        title=numberQuiz 
+    body
+        h1 The Number Quiz
+        p Your current score is #{score}
+        p Guess the number in the sequence.
+        p #{inputs}
+        form(action="/numberQuiz")
+            p Your answer: 
+                input( type='text',id='answer',name='answer')
+                input(type="hidden", id="userId", name="userId",value=`${userId}`)
+
+            p 
+                input( type='submit' value='Submit')
+
