@@ -1,0 +1,14 @@
+h1 {
+    background-color: #DDDDDD;
+}
+
+#bar {
+    background-color: #EDEEED;
+}
+
+#validators {
+    position: fixed;
+    right: 0px;
+    bottom: 31px;
+    opacity: 0.5;
+}

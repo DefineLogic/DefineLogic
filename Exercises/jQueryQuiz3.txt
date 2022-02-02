@@ -31,6 +31,9 @@ $(document).ready(function() {
             $("p span:first-child").css("color", "black");
         });
 
+        var str = ${"p"}.first().text();
+        $("p").last().html(str);
+
 2. Write jQuery code to create a red background for the level-2 list items.
 <ul class="level-1">
  <li class="item-i">I</li>
@@ -53,6 +56,8 @@ Ans:
 $(document).ready(function() {
             $(".level-2").css("background-color", "red");
         });
+
+        $("li.item-a").parent().css("background-color", "red");
 
 3. Write jQuery code to select the element that comes immediately before item three and change its
 background color to blue.
@@ -105,3 +110,6 @@ $(document).ready(function(){
 Ans: $(document).ready(function() {
             $("span").parentsUntil("div").css("color", "green");
         });
+
+        $("span").parent().css("color", "green");
+        $("span").parent().css("color", "green");

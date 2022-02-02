@@ -7,13 +7,13 @@ Sample HTML:
 
 <body>
     <h1>abc</h1><br>
-    <div>
+    <div>   
         <h1>div-1</h1>
         <h1>div-2</h1>
     </div>
     <h1>xyz</h1>
 </body>
-Answer: $("div h1").css("background-color","red");
+Answer: $("div > h1").css("background-color","red");
 <h3> 3. Use a jQuery method to insert the text "YES!" at the end of the element.
 </h3>
 <!DOCTYPE html>
