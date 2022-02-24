@@ -33,7 +33,7 @@ $(document).ready(function() {
 
         var str = ${"p"}.first().text();
         $("p").last().html(str);
-
+            
 2. Write jQuery code to create a red background for the level-2 list items.
 <ul class="level-1">
  <li class="item-i">I</li>
